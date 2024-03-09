@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,32 +41,34 @@ footer {
 }
 
 .services{
-    width: 100%;
-    height: 100%;
+    min-height: 90vh;
+    padding-bottom: 7rem;
 }
-.services .services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Keeps two columns */
+    grid-gap: 20px; /* Adjust the gap between boxes as needed */
+    justify-items: center; /* Centers the boxes in their grid cells */
 }
 
 .services-container .services-box {
-    flex: 1 1 30rem;
+    max-width: 90%; /* Adjust the maximum width of the boxes */
+    margin: 20px; /* Adjust margin for spacing around the boxes */
     background: #f5ebeb;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
-    box-shadow: 0, .1rem .5rem var(--shadow-color);
+    box-shadow: 0 .1rem .5rem #ccc; /* Adjusted shadow color for visibility */
     text-align: center;
     border-top: .6rem solid #be6f81;
     border-bottom: .6rem solid #48a5df;
-
+    cursor: pointer;
+    transition: transform .3s ease, box-shadow .3s ease; /* Smooth transition */
 }
 
-.services-container .services-box:hover{
+.services-box:hover {
     box-shadow: 0 .1rem 2rem #48a5df;
-    transform: scale(1.02); makes it bigger
+    transform: scale(1.02);
 }
 
 .services-box i {
