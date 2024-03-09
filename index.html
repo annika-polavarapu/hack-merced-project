@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Website</title>
+  <title>Mental Health Resources</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -49,16 +49,35 @@
       <a href="help-near-me.html" class="services-box" target="_blank">
         <i class='bx bxs-leaf' ></i>
         <h3> Help Near Me </h3>
-        <p> Find therapists, psychologists, and doctors near me, connect with them
-        </p>
-      </a>
-      
+        <p> Find therapists, psychologists, and doctors near me, connect with them</p>
+      </a>   
     </div>
   </section>
 
   <!-- <footer>
     <p>&copy; 2024 Simple Website</p>
   </footer> -->
+ <!-- Contact Us Section with Feedback Form -->
+ <section class="contact" id="contact">
+  <div class="feedback-form">
+    <form action="https://formspree.io/f/mbjnkkgb" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Questions or comments:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2024 Mental Health Resources</p>
+  </footer>
 
   <section class="contact" id="contact">
     
