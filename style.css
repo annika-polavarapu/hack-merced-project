@@ -115,7 +115,6 @@ footer {
     color: #d785c3;
 } 
 
-<<<<<<< HEAD
 a {
     text-decoration: none; /* This removes the underline from all links */
 }
@@ -123,10 +122,8 @@ a {
 h2 {
     font-size: 40px; /* Change this value to the desired font size */
     text-align: center; /* This centers the text, removing the need for the <center> tag */
-=======
-.contact {
+}.contact {
     background-color: lavenderblush;
     background-size: cover; 
     background-repeat: no-repeat; 
->>>>>>> df2713d2828baebf088f27c4cbd925341144e55a
 }
