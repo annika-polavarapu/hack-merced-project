@@ -131,56 +131,65 @@ h2 {
 }
 
 .feedback-form {
-    background-color: lavenderblush; /* Adjusted to fit the form section specifically */
-    padding: 2rem; /* Provides padding around the form */
-    display: flex; /* Utilizes flexbox for layout */
-    flex-direction: column; /* Stacks form elements vertically */
-    align-items: center; /* Centers items horizontally */
-    justify-content: center; /* Centers items vertically */
-    height: 100vh; /* Full view height */
+    background-color: lavenderblush;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .feedback-form form {
-    width: 80%; /* Adjust the form width as needed */
-    max-width: 500px; /* Ensures the form is not too wide on large screens */
-    background: #f5ebeb; /* Matches other sections' styling */
-    padding: 20px; /* Padding inside the form */
-    border-radius: 20px; /* Rounded corners for the form */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the form */
+    width: 100%; /* Adjust based on the desired width */
+    max-width: 500px; /* Ensures the form does not stretch too wide */
+    margin: auto; /* Centers the form in the .feedback-form container */
+    background: #f5ebeb;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns children (labels and inputs) to the start, i.e., left side */
 }
 
 .feedback-form label {
-    display: block; /* Ensures each label is on a new line */
-    margin-bottom: 5px; /* Spacing between label and input */
-    color: #333; /* Label text color for better readability */
+    display: block;
+    margin-bottom: 5px;
+    width: 94%; /* Matches the input width */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .feedback-form input[type="text"],
 .feedback-form input[type="email"],
 .feedback-form textarea {
-    width: 100%; /* Full width of the form container */
-    padding: 10px; /* Padding inside the fields for comfort */
+    width: 90%; /* This width matches the label's width */
+    padding: 10px;
     margin-bottom: 20px; /* Spacing between each field */
-    border: 1px solid #ccc; /* Subtle border */
-    border-radius: 5px; /* Slightly rounded corners */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; /* Ensures the element is treated as a block-level element */
+    margin-left: auto; /* Centers the element */
+    margin-right: auto; /* Centers the element */
 }
 
 .feedback-form textarea {
-    height: 150px; /* Sets a fixed height for the text area */
-    resize: vertical; /* Allows vertical resizing only */
+    height: 150px;
+    resize: vertical;
 }
 
 .feedback-form button {
-    width: auto; /* Auto width based on content */
-    padding: 10px 20px; /* Comfortable padding */
-    background-color: #333; /* Matching the header and footer */
-    color: white; /* Text color for readability */
-    border: none; /* No border */
-    border-radius: 5px; /* Consistent rounded corners */
-    cursor: pointer; /* Indicates interactiveness */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center; /* Centers the button within the flex container */
 }
 
 .feedback-form button:hover {
-    background-color: #555; /* Darker shade on hover for feedback */
+    background-color: #555;
 }
