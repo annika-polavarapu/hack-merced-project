@@ -137,7 +137,6 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .feedback-form form {
@@ -192,4 +191,31 @@ h2 {
 
 .feedback-form button:hover {
     background-color: #555;
+}
+
+.blog-posts {
+    width: 80%;
+    margin: 20px auto; /* Centers the blog post section and adds some spacing from the top and bottom */
+    background-color: #f5ebeb; /* Light background color similar to the form section for consistency */
+    padding: 20px;
+    border-radius: 5px; /* Adds rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.post {
+    background-color: #ffffff; /* Slightly contrasting background to distinguish individual posts */
+    border: 1px solid #ddd; /* Subtle border */
+    margin-bottom: 20px; /* Spacing between posts */
+    padding: 20px; /* Padding inside each post */
+    border-radius: 5px; /* Consistency in design with rounded corners */
+}
+
+.post h2 {
+    color: #333; /* Dark color for the title for readability */
+    margin-bottom: 10px; /* Adds space between the title and content/date */
+}
+
+.post p {
+    color: #666; /* Slightly lighter color for the content for a softer look */
+    line-height: 1.6; /* Improves readability of the post content */
 }
