@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "hack-merced-project",
+			"path": "."
+		},
+		{
+			"name": "oa python bootcamp",
+			"path": "../oa python bootcamp"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "hack-merced-project"
+	}
+}
