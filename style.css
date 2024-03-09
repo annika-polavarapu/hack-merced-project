@@ -1,4 +1,5 @@
 body {
+    background: #a3a3a3;
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
@@ -26,6 +27,21 @@ nav#navbar .nav-link:hover {
     background: #555;
 }
 
+.home {
+    background-color: lavender;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  height: 100vh;
+}
+
+
+.about {
+    background-color: rosybrown;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+    height: 100vh;
+}
+
 section {
     padding: 20px;
 }
@@ -40,20 +56,23 @@ footer {
 }
 
 .services{
-    min-height: 90vh;
-    padding-bottom: 7rem;
+    background-color: lavender;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  height: 100vh;
 }
 
 .services-container {
+   padding-top: 150px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Keeps two columns */
+    grid-template-columns: repeat(4, 1fr); /* Changed to four columns */
     grid-gap: 20px; /* Adjust the gap between boxes as needed */
     justify-items: center; /* Centers the boxes in their grid cells */
 }
 
 .services-container .services-box {
-    max-width: 90%; /* Adjust the maximum width of the boxes */
-    margin: 20px; /* Adjust margin for spacing around the boxes */
+    max-width: 100%; /* Adjust the maximum width of the boxes */
+    margin: 10px; /* Adjust margin for spacing around the boxes */
     background: #f5ebeb;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -63,6 +82,8 @@ footer {
     border-bottom: .6rem solid #48a5df;
     cursor: pointer;
     transition: transform .3s ease, box-shadow .3s ease; /* Smooth transition */
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .services-box:hover {
@@ -94,6 +115,7 @@ footer {
     color: #d785c3;
 } 
 
+<<<<<<< HEAD
 a {
     text-decoration: none; /* This removes the underline from all links */
 }
@@ -101,4 +123,10 @@ a {
 h2 {
     font-size: 40px; /* Change this value to the desired font size */
     text-align: center; /* This centers the text, removing the need for the <center> tag */
+=======
+.contact {
+    background-color: lavenderblush;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+>>>>>>> df2713d2828baebf088f27c4cbd925341144e55a
 }
