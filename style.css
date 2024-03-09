@@ -35,7 +35,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -94,3 +93,12 @@ footer {
 .services-box:hover h3 {
     color: #d785c3;
 } 
+
+a {
+    text-decoration: none; /* This removes the underline from all links */
+}
+
+h2 {
+    font-size: 40px; /* Change this value to the desired font size */
+    text-align: center; /* This centers the text, removing the need for the <center> tag */
+}
