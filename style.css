@@ -4,34 +4,49 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
 }
-
-nav#navbar {
+#navbar {
     display: flex;
-    justify-content: space-around;
-}
-
-nav#navbar .nav-link {
-    color: #fff;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    position: fixed;
+    top: 10px; /* Adjust top padding */
+    width: 100%;
+    height: 50px; /* Adjust height as needed */
+    background-color: transparent;
+  }
+  
+  .nav-link {
+    font-family: Arial, sans-serif;
     text-decoration: none;
-    padding: 10px;
-}
-
-nav#navbar .nav-link:hover {
-    background: #555;
-}
+    color: #ffffff; /* Default text color */
+    padding: 10px; /* Adjust padding to make elements closer together */
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+    min-width: 80px; /* Set a minimum width */
+    text-align: center; /* Center text horizontally */
+    margin: 0 5px; /* Add a small margin between elements */
+  }
+  
+  .nav-link:hover {
+    background-color: #ccc; /* Background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
+  /* Styling for all links */
+  .nav-link {
+    background-color: #333; /* Set background color for all links */
+  }
+  
+  
 
 .home {
     background-color: lavender;
   background-size: cover; 
   background-repeat: no-repeat; 
   height: 100vh;
+  background-image: url('/Users/anvikudaraya/Hackathon/waterfall.png');
 }
 
 
