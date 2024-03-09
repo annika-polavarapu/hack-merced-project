@@ -1,4 +1,5 @@
 body {
+    background: #a3a3a3;
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
@@ -65,7 +66,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -130,8 +130,107 @@ footer {
     color: #d785c3;
 } 
 
+a {
+    text-decoration: none; /* This removes the underline from all links */
+}
+
+h2 {
+    font-size: 40px; /* Change this value to the desired font size */
+    text-align: center; /* This centers the text, removing the need for the <center> tag */
+}
+
 .contact {
     background-color: lavenderblush;
     background-size: cover; 
     background-repeat: no-repeat; 
+}
+
+.feedback-form {
+    background-color: lavenderblush;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-form form {
+    width: 100%; /* Adjust based on the desired width */
+    max-width: 500px; /* Ensures the form does not stretch too wide */
+    margin: auto; /* Centers the form in the .feedback-form container */
+    background: #f5ebeb;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns children (labels and inputs) to the start, i.e., left side */
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+    width: 94%; /* Matches the input width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: 90%; /* This width matches the label's width */
+    padding: 10px;
+    margin-bottom: 20px; /* Spacing between each field */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; /* Ensures the element is treated as a block-level element */
+    margin-left: auto; /* Centers the element */
+    margin-right: auto; /* Centers the element */
+}
+
+.feedback-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.feedback-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center; /* Centers the button within the flex container */
+}
+
+.feedback-form button:hover {
+    background-color: #555;
+}
+
+.blog-posts {
+    width: 80%;
+    margin: 20px auto; /* Centers the blog post section and adds some spacing from the top and bottom */
+    background-color: #f5ebeb; /* Light background color similar to the form section for consistency */
+    padding: 20px;
+    border-radius: 5px; /* Adds rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.post {
+    background-color: #ffffff; /* Slightly contrasting background to distinguish individual posts */
+    border: 1px solid #ddd; /* Subtle border */
+    margin-bottom: 20px; /* Spacing between posts */
+    padding: 20px; /* Padding inside each post */
+    border-radius: 5px; /* Consistency in design with rounded corners */
+}
+
+.post h2 {
+    color: #333; /* Dark color for the title for readability */
+    margin-bottom: 10px; /* Adds space between the title and content/date */
+}
+
+.post p {
+    color: #666; /* Slightly lighter color for the content for a softer look */
+    line-height: 1.6; /* Improves readability of the post content */
 }

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Simple Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,5 +18,141 @@
   </header>
 
   <script src="script.js"></script>
+</body>
+</html>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+
+    .calendar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .month-container {
+      display: none;
+    }
+
+    .month-table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .month-table th, .month-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    button {
+      background-color: #d785c3;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d785c3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="calendar">
+  <button onclick="showMonth('January')">January</button>
+  <button onclick="showMonth('February')">February</button>
+  <button onclick="showMonth('March')">March</button>
+  <button onclick="showMonth('April')">April</button>
+  <button onclick="showMonth('May')">May</button>
+  <button onclick="showMonth('June')">June</button>
+  <button onclick="showMonth('July')">July</button>
+  <button onclick="showMonth('August')">August</button>
+  <button onclick="showMonth('September')">September</button>
+  <button onclick="showMonth('October')">October</button>
+  <button onclick="showMonth('November')">November</button>
+  <button onclick="showMonth('December')">December</button>
+</div>
+
+<div id="January" class="month-container">
+  <h2>January 2024</h2>
+  <table class="month-table">
+    <tr>
+      <th>Sun</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+      </tr>
+    <!-- Add the rest of the days for January 2024 -->
+  </table>
+</div>
+
+<div id="February" class="month-container">
+  <h2>February 2024</h2>
+  <table class="month-table">
+    <tr>
+      <th>Sun</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <!-- Add the rest of the days for February 2024 -->
+  </table>
+</div>
+
+<!-- Repeat the above div blocks for each month -->
+
+<script>
+  function showMonth(month) {
+    // Hide all month containers
+    var containers = document.querySelectorAll('.month-container');
+    containers.forEach(function(container) {
+      container.style.display = 'none';
+    });
+
+    // Show the selected month container
+    var selectedMonth = document.getElementById(month);
+    selectedMonth.style.display = 'block';
+  }
+</script>
+
 </body>
 </html>
