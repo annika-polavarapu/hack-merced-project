@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Website</title>
+  <title>Mental Health Resources</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,6 @@
       <a href="#home" class="nav-link">Home</a>
       <a href="#about" class="nav-link">About Us</a>
       <a href="#services" class="nav-link">Services</a>
-      <a href="#blog" class="nav-link">Blog</a>
       <a href="#contact" class="nav-link">Contact Us</a>
     </nav>
   </header>
@@ -26,7 +25,6 @@
   </section>
 
   <section class="services" id="services">
-    <h2>Services</h2>
     <div class="services-container">
       <a href="exercises.html" class="services-box">
         <i class='bx bxs-palette'></i>
@@ -50,13 +48,30 @@
         <i class='bx bxs-leaf' ></i>
         <h3> Help Near Me </h3>
         <p> Find therapists, psychologists, and doctors near me, connect with them</p>
-      </a>
-      
+      </a>   
     </div>
   </section>
 
+ <!-- Contact Us Section with Feedback Form -->
+ <section class="contact" id="contact">
+  <div class="feedback-form">
+    <form action="https://formspree.io/f/mbjnkkgb" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Questions or comments:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
   <footer>
-    <p>&copy; 2024 Simple Website</p>
+    <p>&copy; 2024 Mental Health Resources</p>
   </footer>
 
   <section class="contact" id="contact">
