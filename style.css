@@ -115,7 +115,6 @@ footer {
     color: #d785c3;
 } 
 
-<<<<<<< HEAD
 a {
     text-decoration: none; /* This removes the underline from all links */
 }
@@ -123,10 +122,65 @@ a {
 h2 {
     font-size: 40px; /* Change this value to the desired font size */
     text-align: center; /* This centers the text, removing the need for the <center> tag */
-=======
+}
+
 .contact {
     background-color: lavenderblush;
     background-size: cover; 
     background-repeat: no-repeat; 
->>>>>>> df2713d2828baebf088f27c4cbd925341144e55a
+}
+
+.feedback-form {
+    background-color: lavenderblush; /* Adjusted to fit the form section specifically */
+    padding: 2rem; /* Provides padding around the form */
+    display: flex; /* Utilizes flexbox for layout */
+    flex-direction: column; /* Stacks form elements vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    height: 100vh; /* Full view height */
+}
+
+.feedback-form form {
+    width: 80%; /* Adjust the form width as needed */
+    max-width: 500px; /* Ensures the form is not too wide on large screens */
+    background: #f5ebeb; /* Matches other sections' styling */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 20px; /* Rounded corners for the form */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the form */
+}
+
+.feedback-form label {
+    display: block; /* Ensures each label is on a new line */
+    margin-bottom: 5px; /* Spacing between label and input */
+    color: #333; /* Label text color for better readability */
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: 100%; /* Full width of the form container */
+    padding: 10px; /* Padding inside the fields for comfort */
+    margin-bottom: 20px; /* Spacing between each field */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+.feedback-form textarea {
+    height: 150px; /* Sets a fixed height for the text area */
+    resize: vertical; /* Allows vertical resizing only */
+}
+
+.feedback-form button {
+    width: auto; /* Auto width based on content */
+    padding: 10px 20px; /* Comfortable padding */
+    background-color: #333; /* Matching the header and footer */
+    color: white; /* Text color for readability */
+    border: none; /* No border */
+    border-radius: 5px; /* Consistent rounded corners */
+    cursor: pointer; /* Indicates interactiveness */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.feedback-form button:hover {
+    background-color: #555; /* Darker shade on hover for feedback */
 }
