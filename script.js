@@ -1,7 +1,7 @@
 let map;
 let service;
 let infowindow;
-let currentMarkers = [];
+let currentMarkers = []; // Array to store current markers
 
 function initMap() {
   navigator.geolocation.getCurrentPosition(function (position) {
@@ -10,8 +10,10 @@ function initMap() {
       center: userLocation,
       zoom: 15,
     });
+    // Continue setting up your map and other functionalities
   }, function (error) {
     console.error("Error getting location: " + error.message);
+    // Handle error or set a default location
   });
 
   infowindow = new google.maps.InfoWindow();
