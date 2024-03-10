@@ -19,7 +19,7 @@
    display: flex;
    justify-content: center; /* Center items horizontally */
    align-items: center;
-   position: fixed;
+   position: absolute;
    top: 5px; /* Adjust top padding */
    bottom: 5px;
    width: 100%;
@@ -28,6 +28,7 @@
    z-index: 1000;
    margin-top: 15px;
    font-size: 13px;
+  
  }
   .nav-link {
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
@@ -129,10 +130,11 @@
 </head>
 <body>
    <title>Mood Tracker</title>
-   <br>
-   <br>
-   <br>
 
+
+   <br>
+   <br>
+   <br>
    <h1 style="text-align: center;">Mood Tracker</h1>
    <form id="moodForm" style="margin: 0 auto;">
        <label for="feeling">How are you feeling today?</label><br>
@@ -198,6 +200,7 @@
 
        <button type="submit">Submit</button>
    </form>
+
 
    <br>
    <h2 style="text-align: center;">Mood Log</h2>
