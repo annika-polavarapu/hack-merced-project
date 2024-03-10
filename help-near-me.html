@@ -3,6 +3,22 @@
 <head>
     <title>Find Services Near You</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        #google_translate_element {
+          float: right;
+          margin-right: 10px;
+        }
+      </style>
+
+<header>
+    <nav id="navbar">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <!-- <a href="#blog" class="nav-link">Blog</a> -->
+      <a href="#contact" class="nav-link">Contact Us</a>
+    </nav>
+  </header>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHTHWzrFSkZq1C-VW6f2j3d-LF-Bg77Kw&callback=initMap&libraries=places" async defer></script>
     <script src="script.js" defer></script>
 </head>
@@ -13,6 +29,15 @@
         <button id="gyms">Gyms</button>
         <button id="yoga">Yoga</button>
     </div>
+
     <div id="map"></div>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
 </body>
 </html>
