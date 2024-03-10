@@ -40,6 +40,11 @@ document.getElementById("surveyForm").addEventListener("submit", function (event
  function redirectToExercises() {
     const mood = document.getElementById("mood").value;
     const stressLevel = parseInt(document.getElementById("stressLevel").value);
+ 
+ 
+    // You can perform additional logic or send the data to a server here
+ 
+ 
     // Redirect to the exercises page
     window.location.href = `exercises.html?mood=${mood}&stressLevel=${stressLevel}`;
  }
