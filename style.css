@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
 #navbar {
     display: flex;
     justify-content: center; /* Center items horizontally */
@@ -83,13 +83,16 @@ section {
 }
 
 footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
-    bottom: 0;
-    width: 100%;
 }
+
+
 
 .services{
     background-color: #668498;
@@ -166,6 +169,10 @@ a {
 h2 {
     font-size: 40px; /* Change this value to the desired font size */
     text-align: center; /* This centers the text, removing the need for the <center> tag */
+}.contact {
+    background-color: lavenderblush;
+    background-size: cover; 
+    background-repeat: no-repeat; 
 }
 
 .contact {
@@ -263,3 +270,28 @@ h2 {
     color: #666; /* Slightly lighter color for the content for a softer look */
     line-height: 1.6; /* Improves readability of the post content */
 }
+#map-title {
+    text-align: center; /* Centers the text horizontally */
+    width: 100%; /* Ensures the heading takes full width to properly center the text */
+    margin-top: 20px; /* Adds some space at the top. Adjust this value as needed. */
+}
+
+#map {
+    height: 400px; 
+    width: 50%; 
+    margin: 20px auto; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3); 
+    border-radius: 10px; 
+    border: 1px solid #ccc;
+    /* Removed justify-items: center; as it's not applicable */
+    overflow: hidden; /* To ensure the rounded corners apply to the iframe as well */
+}
+
+#buttons {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-right: 5px;
+}
+
