@@ -1,5 +1,5 @@
 body {
-    background: #a3a3a3;
+    background: transparent;
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,12 +15,13 @@ body {
     width: 100%;
     height: 50px; /* Adjust height as needed */
     background-color: transparent;
+    z-index: 1000;
   }
   
   .nav-link {
     font-family: Arial, sans-serif;
     text-decoration: none;
-    color: #ffffff; /* Default text color */
+    color: #fff2d4; /* Default text color */
     padding: 10px; /* Adjust padding to make elements closer together */
     border-radius: 30px;
     transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
@@ -31,7 +32,7 @@ body {
   
   .nav-link:hover {
     background-color: #ccc; /* Background color on hover */
-    color: #fff; /* Change text color on hover */
+    color: #fff2d4; /* Change text color on hover */
   }
   
   /* Styling for all links */
@@ -42,18 +43,39 @@ body {
   
 
 .home {
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  height: 100vh;
-  background-image: url('backgrounds/Home.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    background-image: url('backgrounds/homeBG.png');
+}
+.home-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 85px;
+    text-decoration: none;
+    color: #fff2d4; /* text color */
+    position: relative;
+    left: 90px; /* Adjust the value as needed */
+    top: 30px; /* Adjust the value as needed */
+    line-height: 0.2em;
+    z-index: 1;
+}
+.home-slogan {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #51708d; /* text color */
+    position: relative;
+    left: 100px; /* Adjust the value as needed */
+    top: 30px; /* Adjust the value as needed */
+    line-height: 0.2em;
 }
 
-
 .about {
-    background-color: rosybrown;
-  background-size: cover; 
-  background-repeat: no-repeat; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
     height: 100vh;
+    background-image: url('backgrounds/About Us.png');
 }
 
 section {
@@ -70,30 +92,38 @@ footer {
 }
 
 .services{
+    background-color: #668498;
     background-size: cover; 
     background-repeat: no-repeat; 
     height: 100vh;
-    background-image: url('backgrounds/Services.png');
+}
+.services-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    text-decoration: none;
+    color: #182131; /* text color */
+    position: relative;
+    left: 90px; /* Adjust the value as needed */
+    top: 30px; /* Adjust the value as needed */
+    line-height: 0.2em;
+    z-index: 1;
 }
 
 .services-container {
-   padding-top: 150px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Changed to four columns */
+    grid-template-columns: repeat(2, 1fr); /* Changed to 2x2 */
     grid-gap: 20px; /* Adjust the gap between boxes as needed */
     justify-items: center; /* Centers the boxes in their grid cells */
 }
 
 .services-container .services-box {
-    max-width: 100%; /* Adjust the maximum width of the boxes */
+    max-width: 60%; /* Adjust the maximum width of the boxes */
     margin: 10px; /* Adjust margin for spacing around the boxes */
-    background: #f5ebeb;
+    background: #51708d;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
-    box-shadow: 0 .1rem .5rem #ccc; /* Adjusted shadow color for visibility */
+    box-shadow: 0 .1rem .5rem #182131; /* Adjusted shadow color for visibility */
     text-align: center;
-    border-top: .6rem solid #be6f81;
-    border-bottom: .6rem solid #48a5df;
     cursor: pointer;
     transition: transform .3s ease, box-shadow .3s ease; /* Smooth transition */
     text-decoration: none;
@@ -101,7 +131,7 @@ footer {
 }
 
 .services-box:hover {
-    box-shadow: 0 .1rem 2rem #48a5df;
+    box-shadow: 0 .1rem 2rem #182131;
     transform: scale(1.02);
 }
 
