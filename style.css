@@ -5,15 +5,10 @@ body {
     padding: 0;
     box-sizing: border-box;
  }
- updated-about-branch
- 
-
 
  .help {
     background: linear-gradient(to bottom, #775D52, #ffffff);
  }
-
-
  
  #navbar {
     display: flex;
@@ -64,12 +59,6 @@ body {
     background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('backgrounds/homeBG.png');
  }
 
- .home-title {
-
- 
-.home-title {
-
-
     font-family: 'Times New Roman', Times, serif;
     font-size: 85px;
     text-decoration: none;
@@ -79,8 +68,7 @@ body {
     top: 50px; /* Adjust the value as needed */
     line-height: 0.2em;
     z-index: 1;
-   
-
+  
 }
 .home-slogan {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
@@ -346,12 +334,11 @@ h2 {
 .post p {
     color: #666; /* Slightly lighter color for the content for a softer look */
     line-height: 1.6; /* Improves readability of the post content */
+
  }
 
  #map-title {
 
-
-#map-title {
 
     text-align: center; /* Centers the text horizontally */
     width: 100%; /* Ensures the heading takes full width to properly center the text */
@@ -379,12 +366,6 @@ h2 {
  button {
     margin-right: 5px;
  }
-
- 
-
- 
-
-
 
 #buttons {
     position: fixed;
@@ -432,12 +413,18 @@ h2 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   }
 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+
   body {
     font-family: Arial, sans-serif;
     overflow-x: hidden; 
     overflow-y: auto; 
     margin: 0; 
     padding: 0; 
+
 }
 
 label, select, button {
@@ -454,5 +441,3 @@ li {
     margin: 5px 0;
 
 }
-
-
