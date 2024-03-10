@@ -1,5 +1,5 @@
 body {
-    background: transparent;
+    background: #FFFFFF;
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
@@ -46,7 +46,7 @@ body {
     background-size: cover; 
     background-repeat: no-repeat; 
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('backgrounds/homeBG.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url('backgrounds/homeBG.png');
     /* Replace 'backgrounds/homeBG.png' with the actual path to your background image */
 }
 .home-title {
