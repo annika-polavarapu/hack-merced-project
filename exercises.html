@@ -11,21 +11,17 @@
             text-align: center;
             background-color: #f5e6ff; /* Pastel light purple background */
         }
-
         h1 {
             color: #b74296; /* Green color for the main title */
         }
-
         h2 {
             color: #187942; /* Blue color for subheadings */
         }
-
         img {
             max-width: 100%;
             height: auto;
             margin: 20px 0;
         }
-
         ul {
             list-style-type: none;
             padding: 0;
@@ -33,14 +29,12 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-
         li {
             margin: 0 20px 20px 0;
             width: 30%; /* Three items per line */
             text-align: center; /* Center titles */
             color: #555; /* Dark gray text color */
         }
-
         p {
             text-align: center; /* Center text under pictures */
         }
@@ -53,6 +47,7 @@
       </style>
 </head>
 <body>
+
     <div id="google_translate_element"></div>
     <script type="text/javascript">
       function googleTranslateElementInit() {
@@ -60,48 +55,10 @@
       }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
+
     <h1>Mental Health</h1>
 
     <ul>
-        <script>
-            // Function to retrieve parameters from the URL
-            function getURLParameters() {
-                const queryString = window.location.search;
-                const urlParams = new URLSearchParams(queryString);
-                const mood = urlParams.get('mood');
-                const stressLevel = urlParams.get('stressLevel');
-                return { mood, stressLevel };
-            }
-    
-            // Function to display selected exercises and images
-            function displaySelectedExercises() {
-                const { mood, stressLevel } = getURLParameters();
-    
-                const exerciseList = document.getElementById("exerciseList");
-    
-                // Define exercises and images based on mood and stress level
-                const exerciseDetails = {
-                    happy: ["Physical Exercise", "Creative Expression", "Connect with Others"],
-                    sad: ["Mindfulness Meditation", "Gratitude Journal", "Positive Affirmations"],
-                    stressed: ["Deep Breathing", "Limit Screen Time", "Set Realistic Goals"],
-                    depressed: ["Mindfulness Meditation", "Physical Exercise", "Connect with Others"],
-                    angry: ["Deep Breathing", "Creative Expression", "Practice Self-Compassion"]
-                    // Add more exercises as needed
-                };
-    
-                // Create content for each selected exercise
-                exerciseDetails[mood].forEach(exercise => {
-                    const li = document.createElement("li");
-                    li.innerHTML = `<h2>${exercise}</h2>`;
-                    // Add additional details like images and descriptions if needed
-                    exerciseList.appendChild(li);
-                });
-            }
-    
-            // Call the function when the page loads
-            displaySelectedExercises();
-        </script>
         <li>
             <h2>Mindfulness Meditation</h2>
             <img src="https://images.pexels.com/photos/20406446/pexels-photo-20406446/free-photo-of-venice-mourning.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Image 1">
@@ -138,17 +95,21 @@
             <p>Express your thoughts and emotions through art, writing, or music.</p>
         </li>
         <li>
+            <h2>Limit Screen Time</h2>
+            <img src="https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Image 8">
+            <p>Take breaks from electronic devices to reduce stress.</p>
+        </li>
+        <li>
             <h2>Set Realistic Goals</h2>
-            <img src="https://images.pexels.com/photos/19797335/pexels-photo-19797335/free-photo-of-2024.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Image 9">
+            <img src="https://images.pexels.com/photos/16037850/pexels-photo-16037850/free-photo-of-empty-tables-with-goals-for-the-year.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Image 9">
             <p>Break tasks into smaller, achievable goals to avoid feeling overwhelmed.</p>
         </li>
         <li>
             <h2>Practice Self-Compassion</h2>
-            <img src="https://images.pexels.com/photos/19902305/pexels-photo-19902305/free-photo-of-wood-love-sign-writing.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Image 10">
+            <img src="https://images.pexels.com/photos/7150986/pexels-photo-7150986.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Image 10">
             <p>Be kind to yourself and acknowledge that it's okay not to be perfect.</p>
         </li>
     </ul>
-
 </body>
 </html>
   <meta charset="UTF-8">
@@ -165,7 +126,6 @@
       <a href="#contact" class="nav-link">Contact Us</a>
     </nav>
   </header>
-
   <script src="script.js"></script>
 </body>
 </html>
