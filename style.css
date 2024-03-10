@@ -4,8 +4,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-#navbar {
+ }
+ 
+ 
+ #navbar {
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center;
@@ -52,8 +54,8 @@ body {
     height: 100vh;
 
     background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('backgrounds/homeBG.png');
-}
-.home-title {
+ }
+ .home-title {
     font-family: 'Times New Roman', Times, serif;
     font-size: 85px;
     text-decoration: none;
@@ -328,8 +330,8 @@ h2 {
 .post p {
     color: #666; /* Slightly lighter color for the content for a softer look */
     line-height: 1.6; /* Improves readability of the post content */
-}
-#map-title {
+ }
+ #map-title {
     text-align: center; /* Centers the text horizontally */
     width: 100%; /* Ensures the heading takes full width to properly center the text */
     margin-top: 20px; /* Adds some space at the top. Adjust this value as needed. */
@@ -345,10 +347,15 @@ h2 {
     border: 1px solid #ccc;
     /* Removed justify-items: center; as it's not applicable */
     overflow: hidden; /* To ensure the rounded corners apply to the iframe as well */
-}
-#buttons {
+ }
+ 
+ 
+ #buttons {
     margin-bottom: 10px;
-}
-button {
+ }
+ 
+ 
+ button {
     margin-right: 5px;
-}
+ }
+ 
