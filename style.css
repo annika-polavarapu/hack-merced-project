@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
 #navbar {
     display: flex;
     justify-content: center; /* Center items horizontally */
@@ -45,7 +45,7 @@ body {
   background-size: cover; 
   background-repeat: no-repeat; 
   height: 100vh;
-  background-image: url('/Users/anvikudaraya/Hackathon/waterfall.png');
+  background-image: url('backgrounds/Home.png');
 }
 
 
@@ -61,13 +61,16 @@ section {
 }
 
 footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
-    bottom: 0;
-    width: 100%;
 }
+
+
 
 .services{
     background-size: cover; 
