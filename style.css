@@ -5,10 +5,14 @@ body {
     padding: 0;
     box-sizing: border-box;
  }
+ updated-about-branch
+ 
+
 
  .help {
     background: linear-gradient(to bottom, #775D52, #ffffff);
  }
+
 
  
  #navbar {
@@ -58,10 +62,13 @@ body {
     height: 100vh;
 
     background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('backgrounds/homeBG.png');
-
  }
+
+ .home-title {
+
  
 .home-title {
+
 
     font-family: 'Times New Roman', Times, serif;
     font-size: 85px;
@@ -98,10 +105,24 @@ body {
     text-decoration: none;
     color: #fff2d4; /* text color */
     position: relative;
-    left: 650px; /* Adjust the value as needed */
+    left: 750px; /* Adjust the value as needed */
     top: 90px; /* Adjust the value as needed */
     line-height: 0.2em;
     z-index: 1;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 67%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 242, 212, 0.6); /* White with 80% opacity */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 2rem;
+    width: 80%;
 }
 
 .about-para {
@@ -110,11 +131,10 @@ body {
     font-weight: 200;
     text-decoration: none;
     color: #51708d; /* text color */
-    position: relative;
-    left: 100px; /* Adjust the value as needed */
-    top: 400px; /* Adjust the value as needed */
-    line-height: 0.65em;
+    line-height: 1.2em; /* Adjust line height as needed */
+    text-align: center; /* Center text within the rectangle */
 }
+
 section {
     padding: 20px;
 }
@@ -228,7 +248,7 @@ footer {
 } 
 
 .services-box:hover h3 {
-    color: #fff2d4;
+    color: #010101;
 } 
 a {
     text-decoration: none; /* This removes the underline from all links */
@@ -326,10 +346,13 @@ h2 {
 .post p {
     color: #666; /* Slightly lighter color for the content for a softer look */
     line-height: 1.6; /* Improves readability of the post content */
-
  }
 
+ #map-title {
+
+
 #map-title {
+
     text-align: center; /* Centers the text horizontally */
     width: 100%; /* Ensures the heading takes full width to properly center the text */
     margin-top: 20px; /* Adds some space at the top. Adjust this value as needed. */
@@ -345,7 +368,6 @@ h2 {
     border: 1px solid #ccc;
     /* Removed justify-items: center; as it's not applicable */
     overflow: hidden; /* To ensure the rounded corners apply to the iframe as well */
-
  }
  
  
@@ -357,6 +379,9 @@ h2 {
  button {
     margin-right: 5px;
  }
+
+ 
+
  
 
 
@@ -429,4 +454,5 @@ li {
     margin: 5px 0;
 
 }
+
 
