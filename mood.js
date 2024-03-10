@@ -1,57 +1,60 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('moodForm').addEventListener('submit', function(event) {
-        event.preventDefault();
+document.getElementById("moodForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-        // Get values from the form
-        const formData = new FormData(event.target);
-        const data = Object.fromEntries(formData.entries());
-
-        // Handle checkboxes separately to ensure all selections are captured
-        data.activities = formData.getAll('activities').join(', '); // Convert array to string for easier display
-        const date = new Date().toLocaleDateString();
-        data.date = date;
-
-        // Save to local storage
-        let moodHistory = JSON.parse(localStorage.getItem('moodHistory')) || [];
-        moodHistory.push(data);
-        localStorage.setItem('moodHistory', JSON.stringify(moodHistory));
-
-        // Clear the form fields after submission
-        event.target.reset();
-
-        // Update UI with the new entry
-        updateMoodHistoryUI();
+    // Get form values
+    var feeling = document.getElementById("feeling").value;
+    var reason = document.getElementById("reason").value;
+    var enjoyable = document.getElementById("enjoyable").value;
+    var energy = document.getElementById("energy").value;
+    var sleep = document.getElementById("sleep").value;
+    var activities = [];
+    var checkboxes = document.querySelectorAll('input[name="activities"]:checked');
+    checkboxes.forEach(function(checkbox) {
+        activities.push(checkbox.value);
     });
+    var meals = document.getElementById("meals").value;
+    var contact = document.getElementById("contact").value;
 
-    function updateMoodHistoryUI() {
-        const moodHistory = JSON.parse(localStorage.getItem('moodHistory')) || [];
-        const moodHistoryList = document.getElementById('moodHistory');
-        moodHistoryList.innerHTML = ''; // Clear current list
+    // Save data locally
+    var logEntry = {
+        date: new Date().toLocaleString(),
+        feeling: feeling,
+        reason: reason,
+        enjoyable: enjoyable,
+        energy: energy,
+        sleep: sleep,
+        activities: activities,
+        meals: meals,
+        contact: contact
+    };
+    var logs = JSON.parse(localStorage.getItem("moodLogs")) || [];
+    logs.push(logEntry);
+    localStorage.setItem("moodLogs", JSON.stringify(logs));
 
-        if (moodHistory.length === 0) {
-            moodHistoryList.textContent = "No mood history yet!";
-            return; // Exit the function if no data
-        }
-
-        moodHistory.forEach(entry => {
-            const li = document.createElement('li');
-            li.innerHTML = `
-                Date: ${entry.date}, 
-                Mood: ${entry.mood}, 
-                Reason: ${entry.reason ? entry.reason : 'N/A'}, 
-                Enjoyable Activity: ${entry.enjoyable ? entry.enjoyable : 'N/A'}, 
-                Energy Level: ${entry.energy ? entry.energy : 'N/A'}, 
-                Sleep Quality: ${entry.sleep ? entry.sleep : 'N/A'}, 
-                Activities: ${entry.activities ? entry.activities : 'N/A'}, 
-                Meals: ${entry.meals ? entry.meals : 'N/A'}, 
-                Last Contact with Friend: ${entry.friendContact ? entry.friendContact : 'N/A'}
-            `.trim(); // Using trim to ensure no extra whitespace
-            moodHistoryList.appendChild(li);
-        });
-    }
-
-    // Initial load of history
-    updateMoodHistoryUI();
+    // Display log
+    displayLogs();
 });
 
-  
+function displayLogs() {
+    var logs = JSON.parse(localStorage.getItem("moodLogs")) || [];
+    var logContainer = document.getElementById("log");
+    logContainer.innerHTML = "";
+
+    logs.forEach(function(entry) {
+        var logEntry = document.createElement("div");
+        logEntry.innerHTML = "<strong>Date:</strong> " + entry.date +
+                             "<br><strong>Feeling:</strong> " + entry.feeling +
+                             "<br><strong>Reason:</strong> " + entry.reason +
+                             "<br><strong>Enjoyable activity:</strong> " + entry.enjoyable +
+                             "<br><strong>Energy level:</strong> " + entry.energy +
+                             "<br><strong>Sleep quality:</strong> " + entry.sleep +
+                             "<br><strong>Activities:</strong> " + entry.activities.join(", ") +
+                             "<br><strong>Meals:</strong> " + entry.meals +
+                             "<br><strong>Last contact with a friend:</strong> " + entry.contact +
+                             "<hr>";
+        logContainer.appendChild(logEntry);
+    });
+}
+
+// Display logs on page load
+displayLogs();
