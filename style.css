@@ -95,39 +95,43 @@ footer {
 
 
 .services{
-    background-color: #668498;
+    background-color: #fff2d4;
     background-size: cover; 
     background-repeat: no-repeat; 
     height: 100vh;
+
+    min-height: 90px;
+    padding-bottom: 7rem;
 }
 .services-title{
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
     text-decoration: none;
-    color: #182131; /* text color */
+    color: #51708d; /* text color */
     position: relative;
-    left: 90px; /* Adjust the value as needed */
-    top: 30px; /* Adjust the value as needed */
     line-height: 0.2em;
     z-index: 1;
+
+    /* Center the text using Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Changed to 2x2 */
-    grid grid-template-rows: auto;
-    grid-gap: 10px; /* Adjust the gap between boxes as needed */
-    justify-items: start; /* Centers the boxes in their grid cells */
-    align-self: center;
+    grid-template-columns: repeat(4, 1fr); /* Changed to 2x2 */
+    grid-gap: 10px 10px; /* Adjust the gap between rows (vertical) and columns (horizontal) as needed */
+    justify-items: center; /* Centers the boxes in their grid cells */
 }
 
 .services-container .services-box {
     max-width: 60%; /* Adjust the maximum width of the boxes */
     margin: 10px; /* Adjust margin for spacing around the boxes */
-    background: #51708d;
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    box-shadow: 0 .1rem .5rem #182131; /* Adjusted shadow color for visibility */
+    padding: 0.2rem 2rem 0.1rem;
+    border-radius: 8rem 8rem 1rem 1rem; /* Rounded corners: top-left, top-right, bottom-right, bottom-left */
+    box-shadow: 0 .1rem .5rem #668498; /* Adjusted shadow color for visibility */
     text-align: center;
     cursor: pointer;
     transition: transform .3s ease, box-shadow .3s ease; /* Smooth transition */
@@ -135,8 +139,24 @@ footer {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+.services-container .services-box:nth-child(1) {
+    background: url('backgrounds/neutral-calm-1-abstract-minimal-feminine-woman-floral-lines-arch-design-bramblier-york-transparent.png') center/cover no-repeat; /* Replace 'image1.jpg' with the actual path to your first image */
+}
+
+.services-container .services-box:nth-child(2) {
+    background: url('image2.jpg') center/cover no-repeat; /* Replace 'image2.jpg' with the actual path to your second image */
+}
+
+.services-container .services-box:nth-child(3) {
+    background: url('image3.jpg') center/cover no-repeat; /* Replace 'image3.jpg' with the actual path to your third image */
+}
+
+.services-container .services-box:nth-child(4) {
+    background: url('image4.jpg') center/cover no-repeat; /* Replace 'image4.jpg' with the actual path to your fourth image */
+}
+
 .services-box:hover {
-    box-shadow: 0 .1rem 2rem #182131;
+    box-shadow: 0 .1rem 2rem #668498;
     transform: scale(1.02);
 }
 
@@ -155,13 +175,8 @@ footer {
     margin: 1rem 0 3rem;
 } 
 
-.services {
-    min-height: 90px;
-    padding-bottom: 7rem;
-}
-
 .services-box:hover h3 {
-    color: #d785c3;
+    color: #fff2d4;
 } 
 
 a {
