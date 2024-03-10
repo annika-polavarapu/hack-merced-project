@@ -92,41 +92,41 @@ body {
     background-repeat: no-repeat; 
     height: 100vh;
     background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('backgrounds/aboutUsBG.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
 .about-title {
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
     text-decoration: none;
-    color: #fff2d4; /* text color */
-    position: relative;
-    left: 650px; 
-    top: 90px; 
-    line-height: 0.2em;
+    color: #fff2d4;
     z-index: 1;
-}
-.about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    top: 1800px;
-    transform: translateX(-50%);
-    background-color: rgba(255, 242, 212, 0.6); /* White with 80% opacity */
-    padding: 20px; /* Adjust padding as needed */
-    border-radius: 2rem;
-    width: 80%;
+    margin-bottom: 30px;
 }
 
-.about-para {
+.about-container {
+    background-color: rgba(255, 242, 212, 0.6);
+    padding: 20px;
+    border-radius: 2rem;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+#ab {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 200;
     text-decoration: none;
     color: #51708d; /* text color */
     line-height: 1.2em; /* Adjust line height as needed */
     text-align: center; /* Center text within the rectangle */
 }
+
 section {
     padding: 20px;
 }
@@ -139,15 +139,16 @@ footer {
     text-align: center;
     padding: 10px;
 }
-.services{
+.services {
     background-color: #fff2d4;
     background-size: cover; 
     background-repeat: no-repeat; 
-    height: 100vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url('backgrounds/servicesBG.png');
+    height: auto; /* Change height to auto */
     min-height: 90px;
     padding-bottom: 7rem;
 }
+
+
 .services-title{
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
@@ -163,24 +164,21 @@ footer {
 }
 .services-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Use auto-fit and minmax for flexible grid */
     grid-gap: 10px 10px;
     justify-items: center;
-    vertical-align: bottom;
+    align-items: center;
+    text-align: center;
 }
 .services-container .services-box {
-    max-width: 60%;
-    max-height: 500px;
+    max-width: 100%; /* Change max-width to 100% */
     margin: 10px;
-    padding: 0.2rem 2rem 0.1rem;
     padding: 2rem; 
     border-radius: 8rem 8rem 1rem 1rem; 
     box-shadow: 0 .1rem .5rem #668498; 
-    box-shadow: 0 .1rem .5rem #51708d; 
     text-align: center;
     cursor: pointer;
     transition: transform .3s ease, box-shadow .3s ease; /* Smooth transition */
-    text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
     font-family: Arial, sans-serif;
     display: flex;
@@ -313,8 +311,8 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 .post {
-    background-color: #ffffff; /* Slightly contrasting background to distinguish individual posts */
-    border: 1px solid #ddd; /* Subtle border */
+    background-color: #bda5a5; /* Slightly contrasting background to distinguish individual posts */
+    border: 1px solid #ab8888; /* Subtle border */
     margin-bottom: 20px; /* Spacing between posts */
     padding: 20px; /* Padding inside each post */
     border-radius: 5px; /* Consistency in design with rounded corners */
