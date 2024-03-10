@@ -24,7 +24,6 @@
            <option value="stressed">Stressed</option>
            <option value="depressed">Depressed</option>
            <option value="angry">Angry</option>
-           <!-- Add more mood options as needed -->
        </select>
 
 
@@ -95,17 +94,13 @@
            function redirectToExercises() {
                const mood = document.getElementById("mood").value;
                const stressLevel = parseInt(document.getElementById("stressLevel").value);
-  
-               // You can perform additional logic or send the data to a server here
-  
-               // Redirect to the exercises page with mood and stressLevel as parameters
                window.location.href = `exercises.html?mood=${mood}&stressLevel=${stressLevel}`;
            }
   
            // Function to display exercises based on mood
            function displayExercises(mood) {
                const exerciseList = document.getElementById("exerciseList");
-               exerciseList.innerHTML = ""; // Clear existing exercises
+               exerciseList.innerHTML = ""; 
   
                // Define exercises based on mood
                const exercises = {
@@ -114,18 +109,20 @@
                    stressed: ["Deep Breathing", "Limit Screen Time", "Set Realistic Goals"],
                    depressed: ["Mindfulness Meditation", "Physical Exercise", "Connect with Others"],
                    angry: ["Deep Breathing", "Creative Expression", "Practice Self-Compassion"]
-                   // Add more exercises as needed
                };
   
                // Create list items for each exercise
                exercises[mood].forEach(exercise => {
                    const li = document.createElement("li");
                    li.innerHTML = `<h2>${exercise}</h2>`;
-                   // Add additional details like images and descriptions if needed
                    exerciseList.appendChild(li);
                });
            }
        </script>
    </body>
+   <footer>
+    <p>&copy; 2024 Mental Health Resources</p>
+    <p>Text 741741 For Crisis Help</p>
+  </footer>
    </html>
   
