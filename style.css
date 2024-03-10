@@ -1,5 +1,5 @@
 body {
-    background: transparent;
+    background: #FFFFFF;
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
@@ -52,6 +52,10 @@ body {
     background-image: url('backgrounds/homeBG.png');
  }
  .home-title {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url('backgrounds/homeBG.png');
+    /* Replace 'backgrounds/homeBG.png' with the actual path to your background image */
+}
+.home-title {
     font-family: 'Times New Roman', Times, serif;
     font-size: 85px;
     text-decoration: none;
