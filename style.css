@@ -6,9 +6,6 @@ body {
     box-sizing: border-box;
  }
 
-}
-#navbar {
- }
  .help {
     background: linear-gradient(to bottom, #775D52, #ffffff);
  }
@@ -63,13 +60,7 @@ body {
     background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('backgrounds/homeBG.png');
 
  }
- .home-title {
-
-
-    background-image: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url('backgrounds/homeBG.png');
-    /* Replace 'backgrounds/homeBG.png' with the actual path to your background image */
-
-}
+ 
 .home-title {
 
     font-family: 'Times New Roman', Times, serif;
@@ -81,6 +72,8 @@ body {
     top: 50px; /* Adjust the value as needed */
     line-height: 0.2em;
     z-index: 1;
+   
+
 }
 .home-slogan {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
@@ -335,9 +328,6 @@ h2 {
     line-height: 1.6; /* Improves readability of the post content */
 
  }
- #map-title {
-
-}
 
 #map-title {
     text-align: center; /* Centers the text horizontally */
@@ -369,7 +359,6 @@ h2 {
  }
  
 
-}
 
 
 #buttons {
@@ -418,9 +407,12 @@ h2 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   }
 
-body {
+  body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    margin: 0; 
+    padding: 0; 
 }
 
 label, select, button {
