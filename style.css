@@ -4,9 +4,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-#navbar {
+ }
+ 
+ 
+ #navbar {
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center;
@@ -17,8 +18,7 @@ body {
     background-color: transparent;
     z-index: 1000;
   }
-  
-  .nav-link {
+   .nav-link {
     font-family: Arial, sans-serif;
     text-decoration: none;
     color: #fff2d4; /* Default text color */
@@ -29,26 +29,24 @@ body {
     text-align: center; /* Center text horizontally */
     margin: 0 5px; /* Add a small margin between elements */
   }
-  
-  .nav-link:hover {
+   .nav-link:hover {
     background-color: #ccc; /* Background color on hover */
     color: #fff2d4; /* Change text color on hover */
   }
-  
-  /* Styling for all links */
+   /* Styling for all links */
   .nav-link {
     background-color: #333; /* Set background color for all links */
   }
   
-  
-
-.home {
-    background-size: cover; 
-    background-repeat: no-repeat; 
+ 
+ 
+ .home {
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('backgrounds/homeBG.png');
-}
-.home-title {
+ }
+ .home-title {
     font-family: 'Times New Roman', Times, serif;
     font-size: 85px;
     text-decoration: none;
@@ -58,8 +56,8 @@ body {
     top: 50px; /* Adjust the value as needed */
     line-height: 0.2em;
     z-index: 1;
-}
-.home-slogan {
+ }
+ .home-slogan {
     font-family: Arial, sans-serif;
     font-size: 20px;
     font-weight: 200;
@@ -69,20 +67,23 @@ body {
     left: 110px; /* Adjust the value as needed */
     top: 30px; /* Adjust the value as needed */
     line-height: 0.2em;
-}
-
-.about {
-    background-size: cover; 
-    background-repeat: no-repeat; 
+ }
+ 
+ 
+ .about {
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     background-image: url('backgrounds/About Us.png');
-}
-
-section {
+ }
+ 
+ 
+ section {
     padding: 20px;
-}
-
-footer {
+ }
+ 
+ 
+ footer {
     bottom: 0;
     left: 0;
     width: 100%;
@@ -90,20 +91,24 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-}
-
-
-
-.services{
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .services{
     background-color: #fff2d4;
-    background-size: cover; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
-
+ 
+ 
     min-height: 90px;
     padding-bottom: 7rem;
-}
-.services-title{
+ }
+ .services-title{
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
     text-decoration: none;
@@ -111,22 +116,25 @@ footer {
     position: relative;
     line-height: 0.2em;
     z-index: 1;
-
+ 
+ 
     /* Center the text using Flexbox */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.services-container {
+ }
+ 
+ 
+ .services-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Changed to 2x2 */
     grid-gap: 10px 10px; /* Adjust the gap between rows (vertical) and columns (horizontal) as needed */
     justify-items: center; /* Centers the boxes in their grid cells */
-}
-
-.services-container .services-box {
+ }
+ 
+ 
+ .services-container .services-box {
     max-width: 60%; /* Adjust the maximum width of the boxes */
     margin: 10px; /* Adjust margin for spacing around the boxes */
     padding: 0.2rem 2rem 0.1rem;
@@ -137,77 +145,91 @@ footer {
     transition: transform .3s ease, box-shadow .3s ease; /* Smooth transition */
     text-decoration: none;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-.services-container .services-box:nth-child(1) {
+ }
+ 
+ 
+ .services-container .services-box:nth-child(1) {
     background: url('backgrounds/services1.png') center/cover no-repeat; /* Replace 'image1.jpg' with the actual path to your first image */
-}
-
-.services-container .services-box:nth-child(2) {
+ }
+ 
+ 
+ .services-container .services-box:nth-child(2) {
     background: url('backgrounds/services2.png') center/cover no-repeat; /* Replace 'image2.jpg' with the actual path to your second image */
-}
-
-.services-container .services-box:nth-child(3) {
+ }
+ 
+ 
+ .services-container .services-box:nth-child(3) {
     background: url('backgrounds/services3.png') center/cover no-repeat; /* Replace 'image3.jpg' with the actual path to your third image */
-}
-
-.services-container .services-box:nth-child(4) {
+ }
+ 
+ 
+ .services-container .services-box:nth-child(4) {
     background: url('backgrounds/services4.png') center/cover no-repeat; /* Replace 'image4.jpg' with the actual path to your fourth image */
-}
-
-.services-box:hover {
+ }
+ 
+ 
+ .services-box:hover {
     box-shadow: 0 .1rem 2rem #668498;
     transform: scale(1.02);
-}
-
-.services-box i {
+ }
+ 
+ 
+ .services-box i {
     font-size: 7rem;
     color: #484848;
-}
-
-.services-box h3 {
+ }
+ 
+ 
+ .services-box h3 {
     font-size: 2.6rem;
     transition: .5s ease;
-}
-
-.services-box p{
+ }
+ 
+ 
+ .services-box p{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
-} 
-
-.services-box:hover h3 {
+ }
+ 
+ 
+ .services-box:hover h3 {
     color: #fff2d4;
-} 
-
-a {
+ }
+ 
+ 
+ a {
     text-decoration: none; /* This removes the underline from all links */
-}
-
-h2 {
+ }
+ 
+ 
+ h2 {
     font-size: 40px; /* Change this value to the desired font size */
     text-align: center; /* This centers the text, removing the need for the <center> tag */
-}.contact {
+ }.contact {
     background-color: lavenderblush;
-    background-size: cover; 
-    background-repeat: no-repeat; 
-}
-
-.contact {
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ 
+ 
+ .contact {
     background-color: lavenderblush;
-    background-size: cover; 
-    background-repeat: no-repeat; 
-}
-
-.feedback-form {
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ 
+ 
+ .feedback-form {
     background-color: lavenderblush;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.feedback-form form {
+ }
+ 
+ 
+ .feedback-form form {
     width: 100%; /* Adjust based on the desired width */
     max-width: 500px; /* Ensures the form does not stretch too wide */
     margin: auto; /* Centers the form in the .feedback-form container */
@@ -218,19 +240,21 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Aligns children (labels and inputs) to the start, i.e., left side */
-}
-
-.feedback-form label {
+ }
+ 
+ 
+ .feedback-form label {
     display: block;
     margin-bottom: 5px;
     width: 94%; /* Matches the input width */
     margin-left: auto;
     margin-right: auto;
-}
-
-.feedback-form input[type="text"],
-.feedback-form input[type="email"],
-.feedback-form textarea {
+ }
+ 
+ 
+ .feedback-form input[type="text"],
+ .feedback-form input[type="email"],
+ .feedback-form textarea {
     width: 90%; /* This width matches the label's width */
     padding: 10px;
     margin-bottom: 20px; /* Spacing between each field */
@@ -239,14 +263,16 @@ h2 {
     display: block; /* Ensures the element is treated as a block-level element */
     margin-left: auto; /* Centers the element */
     margin-right: auto; /* Centers the element */
-}
-
-.feedback-form textarea {
+ }
+ 
+ 
+ .feedback-form textarea {
     height: 150px;
     resize: vertical;
-}
-
-.feedback-form button {
+ }
+ 
+ 
+ .feedback-form button {
     padding: 10px 20px;
     background-color: #333;
     color: white;
@@ -255,78 +281,68 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s;
     align-self: center; /* Centers the button within the flex container */
-}
-
-.feedback-form button:hover {
+ }
+ 
+ 
+ .feedback-form button:hover {
     background-color: #555;
-}
-
-.blog-posts {
+ }
+ 
+ 
+ .blog-posts {
     width: 80%;
     margin: 20px auto; /* Centers the blog post section and adds some spacing from the top and bottom */
     background-color: #f5ebeb; /* Light background color similar to the form section for consistency */
     padding: 20px;
     border-radius: 5px; /* Adds rounded corners for a softer look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.post {
+ }
+ 
+ 
+ .post {
     background-color: #ffffff; /* Slightly contrasting background to distinguish individual posts */
     border: 1px solid #ddd; /* Subtle border */
     margin-bottom: 20px; /* Spacing between posts */
     padding: 20px; /* Padding inside each post */
     border-radius: 5px; /* Consistency in design with rounded corners */
-}
-
-.post h2 {
+ }
+ 
+ 
+ .post h2 {
     color: #333; /* Dark color for the title for readability */
     margin-bottom: 10px; /* Adds space between the title and content/date */
-}
-
-.post p {
+ }
+ 
+ 
+ .post p {
     color: #666; /* Slightly lighter color for the content for a softer look */
     line-height: 1.6; /* Improves readability of the post content */
-}
-#map-title {
+ }
+ #map-title {
     text-align: center; /* Centers the text horizontally */
     width: 100%; /* Ensures the heading takes full width to properly center the text */
     margin-top: 20px; /* Adds some space at the top. Adjust this value as needed. */
-}
-
-#map {
-    height: 400px; 
-    width: 50%; 
-    margin: 20px auto; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3); 
-    border-radius: 10px; 
+ }
+ 
+ 
+ #map {
+    height: 400px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    border-radius: 10px;
     border: 1px solid #ccc;
     /* Removed justify-items: center; as it's not applicable */
     overflow: hidden; /* To ensure the rounded corners apply to the iframe as well */
-}
-
-#buttons {
+ }
+ 
+ 
+ #buttons {
     margin-bottom: 10px;
-}
-
-button {
+ }
+ 
+ 
+ button {
     margin-right: 5px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-label, select, button {
-    display: block;
-    margin: 10px 0;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin: 5px 0;
-}
+ }
+ 
