@@ -140,19 +140,19 @@ footer {
 }
 
 .services-container .services-box:nth-child(1) {
-    background: url('backgrounds/neutral-calm-1-abstract-minimal-feminine-woman-floral-lines-arch-design-bramblier-york-transparent.png') center/cover no-repeat; /* Replace 'image1.jpg' with the actual path to your first image */
+    background: url('backgrounds/services1.png') center/cover no-repeat; /* Replace 'image1.jpg' with the actual path to your first image */
 }
 
 .services-container .services-box:nth-child(2) {
-    background: url('image2.jpg') center/cover no-repeat; /* Replace 'image2.jpg' with the actual path to your second image */
+    background: url('backgrounds/services2.png') center/cover no-repeat; /* Replace 'image2.jpg' with the actual path to your second image */
 }
 
 .services-container .services-box:nth-child(3) {
-    background: url('image3.jpg') center/cover no-repeat; /* Replace 'image3.jpg' with the actual path to your third image */
+    background: url('backgrounds/services3.png') center/cover no-repeat; /* Replace 'image3.jpg' with the actual path to your third image */
 }
 
 .services-container .services-box:nth-child(4) {
-    background: url('image4.jpg') center/cover no-repeat; /* Replace 'image4.jpg' with the actual path to your fourth image */
+    background: url('backgrounds/services4.png') center/cover no-repeat; /* Replace 'image4.jpg' with the actual path to your fourth image */
 }
 
 .services-box:hover {
