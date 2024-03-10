@@ -4,12 +4,15 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+ }
+
 }
 #navbar {
  }
  .help {
     background: linear-gradient(to bottom, #775D52, #ffffff);
  }
+
  
  #navbar {
     display: flex;
@@ -29,7 +32,7 @@ body {
   }
   
   .nav-link {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
     text-decoration: none;
     color: #fff2d4; /* Default text color */
     padding: 11px; /* Adjust padding to make elements closer together */
@@ -59,11 +62,16 @@ body {
 
     background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('backgrounds/homeBG.png');
 
+ }
+ .home-title {
+
+
     background-image: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url('backgrounds/homeBG.png');
     /* Replace 'backgrounds/homeBG.png' with the actual path to your background image */
 
 }
 .home-title {
+
     font-family: 'Times New Roman', Times, serif;
     font-size: 85px;
     text-decoration: none;
@@ -75,7 +83,7 @@ body {
     z-index: 1;
 }
 .home-slogan {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
     font-size: 20px;
     font-weight: 200;
     text-decoration: none;
@@ -89,7 +97,30 @@ body {
     background-size: cover; 
     background-repeat: no-repeat; 
     height: 100vh;
-    background-image: url('backgrounds/About Us.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('backgrounds/aboutUsBG.png');
+}
+.about-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    text-decoration: none;
+    color: #fff2d4; /* text color */
+    position: relative;
+    left: 650px; /* Adjust the value as needed */
+    top: 90px; /* Adjust the value as needed */
+    line-height: 0.2em;
+    z-index: 1;
+}
+
+.about-para {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #51708d; /* text color */
+    position: relative;
+    left: 100px; /* Adjust the value as needed */
+    top: 400px; /* Adjust the value as needed */
+    line-height: 0.65em;
 }
 section {
     padding: 20px;
@@ -151,7 +182,7 @@ footer {
     cursor: pointer;
     transition: transform .3s ease, box-shadow .3s ease; /* Smooth transition */
     text-decoration: none;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -212,7 +243,6 @@ a {
 h2 {
     font-size: 40px; /* Change this value to the desired font size */
     text-align: center; /* This centers the text, removing the need for the <center> tag */
-}.contact {
 }
 
 .contact {
@@ -303,22 +333,42 @@ h2 {
 .post p {
     color: #666; /* Slightly lighter color for the content for a softer look */
     line-height: 1.6; /* Improves readability of the post content */
+
+ }
+ #map-title {
+
 }
 
 #map-title {
     text-align: center; /* Centers the text horizontally */
     width: 100%; /* Ensures the heading takes full width to properly center the text */
     margin-top: 20px; /* Adds some space at the top. Adjust this value as needed. */
-}
-#map {
-    height: 400px; 
-    width: 50%; 
-    margin: 20px auto; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3); 
-    border-radius: 10px; 
+ }
+ 
+ 
+ #map {
+    height: 400px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    border-radius: 10px;
     border: 1px solid #ccc;
     /* Removed justify-items: center; as it's not applicable */
     overflow: hidden; /* To ensure the rounded corners apply to the iframe as well */
+
+ }
+ 
+ 
+ #buttons {
+    margin-bottom: 10px;
+ }
+ 
+ 
+ button {
+    margin-right: 5px;
+ }
+ 
+
 }
 
 
@@ -387,3 +437,4 @@ li {
     margin: 5px 0;
 
 }
+
