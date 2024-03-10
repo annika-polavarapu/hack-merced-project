@@ -46,7 +46,8 @@ body {
     background-size: cover; 
     background-repeat: no-repeat; 
     height: 100vh;
-    background-image: url('backgrounds/homeBG.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('backgrounds/homeBG.png');
+    /* Replace 'backgrounds/homeBG.png' with the actual path to your background image */
 }
 .home-title {
     font-family: 'Times New Roman', Times, serif;
