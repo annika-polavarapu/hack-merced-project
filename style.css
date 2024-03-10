@@ -102,7 +102,7 @@ footer {
 }
 .services-title{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 80px;
+    font-size: 60px;
     text-decoration: none;
     color: #182131; /* text color */
     position: relative;
@@ -115,8 +115,10 @@ footer {
 .services-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Changed to 2x2 */
-    grid-gap: 20px; /* Adjust the gap between boxes as needed */
-    justify-items: center; /* Centers the boxes in their grid cells */
+    grid grid-template-rows: auto;
+    grid-gap: 10px; /* Adjust the gap between boxes as needed */
+    justify-items: start; /* Centers the boxes in their grid cells */
+    align-self: center;
 }
 
 .services-container .services-box {
