@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mental Health Resources</title>
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-  </script>
+
   <style>
     #google_translate_element {
       float: right;
@@ -23,11 +19,18 @@
       <a href="#home" class="nav-link">Home</a>
       <a href="#about" class="nav-link">About Us</a>
       <a href="#services" class="nav-link">Services</a>
-      <!-- <a href="#blog" class="nav-link">Blog</a> -->
-
       <a href="#contact" class="nav-link">Contact Us</a>
     </nav>
   </header>
+
+  <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
   <section class="home" id="home">
 
   </section>
@@ -56,35 +59,31 @@
         <p>Share your thoughts and advice in a safe environment</p>
       </a>
 
-        
+       
       <a href="help-near-me.html" class="services-box" target="_blank">
         <i class='bx bxs-leaf' ></i>
         <h3> Help Near Me </h3>
         <p> Find therapists, psychologists, and doctors near me, connect with them</p>
-      </a>   
+      </a>  
     </div>
   </section>
 
 
-  <!-- <footer>
-    <p>&copy; 2024 Simple Website</p>
-  </footer> -->
- <!-- Contact Us Section with Feedback Form -->
- <section class="contact" id="contact">
-  <div class="feedback-form">
-    <form action="https://formspree.io/f/mbjnkkgb" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+  <section class="contact" id="contact">
+    <div class="feedback-form">
+      <form action="https://formspree.io/f/mbjnkkgb" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="_replyto" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required>
 
-      <label for="message">Questions or comments:</label>
-      <textarea id="message" name="message" required></textarea>
+        <label for="message">Questions or comments:</label>
+        <textarea id="message" name="message" required></textarea>
 
-      <button type="submit">Send</button>
-    </form>
-  </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </section>
 
   <footer>
@@ -94,6 +93,12 @@
   <section class="contact" id="contact"></section>
 
   <div id="google_translate_element"></div>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', key: 'AIzaSyCxSFZvbv6giPyJjt_LI3ghMWrBNvc5hHA'}, 'google_translate_element');
+    }
+  </script>
 
   <script src="script.js"></script>
 </body>
