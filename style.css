@@ -5,9 +5,6 @@ body {
     padding: 0;
     box-sizing: border-box;
  }
- updated-about-branch
- 
-
 
  .help {
     background: linear-gradient(to bottom, #775D52, #ffffff);
@@ -63,8 +60,6 @@ body {
 
     background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('backgrounds/homeBG.png');
  }
-
- .home-title {
 
  
 .home-title {
@@ -454,5 +449,3 @@ li {
     margin: 5px 0;
 
 }
-
-
