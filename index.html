@@ -3,26 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Website</title>
+  <title>Mental Health Resources</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    #google_translate_element {
+      float: right;
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav id="navbar">
       <a href="#home" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About Us</a>
       <a href="#services" class="nav-link">Services</a>
-      <a href="#blog" class="nav-link">Blog</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <!-- <a href="#blog" class="nav-link">Blog</a> -->
       <a href="#contact" class="nav-link">Contact Us</a>
     </nav>
   </header>
 
+  <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <section class="home" id="home">
+    <div class = "home-title">
+      <h1>Wellness</h1>
+      <h1>For All</h1>
+    </div>
+    <div class = "home-slogan">
+      <h3> Nourish your mind, body, and soul. </h3>
+    </div>
+  </section>
+
+
   <section class="services" id="services">
-    <h2>Services</h2>
+    <div class = "services-title">
+      <h1>Our Services</h1>
+    </div>
     <div class="services-container">
+
       <a href="survey.html" class="services-box">
+
+      <a href="exercises.html" class="services-box" target="_blank">
+
         <i class='bx bxs-palette'></i>
-        <h3> Exercises </h3>
+        <h3> Mental Exercises </h3>
         <p>Find the right exercises for you that cater to your goals and needs</p>
         
         <script>
@@ -32,33 +64,60 @@
         </script>
       </a>
 
+
       
 
 
       <a href="mood-tracker.html" class="services-box">
+
+      <a href="mood-tracker.html" class="services-box" target="_blank">
+
         <i class='bx bxs-city' ></i>
         <h3> Mood Tracker</h3>
         <p>Track your mood, find out why you may be sad or happy</p>
       </a>
 
-      <a href="self-help-blog.html" class="services-box">
+      <a href="self-help-blog.html" class="services-box" target="_blank">
         <i class='bx bxs-leaf' ></i>
         <h3> Self-Help Blog </h3>
         <p>Share your thoughts and advice in a safe environment</p>
       </a>
 
-      <a href="help-near-me.html" class="services-box">
+       
+      <a href="help-near-me.html" class="services-box" target="_blank">
         <i class='bx bxs-leaf' ></i>
-        <h3> Help Near Me </h3>
+        <h3> Resources Near Me </h3>
         <p> Find therapists, psychologists, and doctors near me, connect with them</p>
-      </a>
-      
+      </a>  
+    </div>
+  </section>
+
+  <section class="about" id="about">
+
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="feedback-form">
+      <form action="https://formspree.io/f/mbjnkkgb" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required>
+
+        <label for="message">Questions or comments:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2024 Simple Website</p>
+    <p>&copy; 2024 Mental Health Resources</p>
   </footer>
+
+  <section class="contact" id="contact"></section>
 
   <script src="script.js"></script>
 </body>

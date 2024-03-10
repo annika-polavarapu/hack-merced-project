@@ -45,9 +45,22 @@
             text-align: center; /* Center text under pictures */
         }
     </style>
+      <style>
+        #google_translate_element {
+          float: right;
+          margin-right: 10px;
+        }
+      </style>
 </head>
 <body>
-
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
     <h1>Mental Health</h1>
 
     <ul>
@@ -136,5 +149,23 @@
         </li>
     </ul>
 
+</body>
+</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#contact" class="nav-link">Contact Us</a>
+    </nav>
+  </header>
+
+  <script src="script.js"></script>
 </body>
 </html>
