@@ -6,27 +6,39 @@ body {
     box-sizing: border-box;
 }
 #navbar {
+ }
+ .help {
+    background: linear-gradient(to bottom, #775D52, #ffffff);
+ }
+ 
+ #navbar {
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center;
     position: fixed;
-    top: 10px; /* Adjust top padding */
+    top: 5px; /* Adjust top padding */
+    bottom: 5px;
     width: 100%;
     height: 50px; /* Adjust height as needed */
     background-color: transparent;
     z-index: 1000;
+    margin-top: 15px;
+    font-size: 13px;
+    /* border-bottom: 2px solid black; */
+
   }
   
   .nav-link {
     font-family: Arial, sans-serif;
     text-decoration: none;
     color: #fff2d4; /* Default text color */
-    padding: 10px; /* Adjust padding to make elements closer together */
-    border-radius: 30px;
+    padding: 11px; /* Adjust padding to make elements closer together */
+    border-radius: 20px;
     transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
     min-width: 80px; /* Set a minimum width */
     text-align: center; /* Center text horizontally */
-    margin: 0 5px; /* Add a small margin between elements */
+    margin: 0 12px; /* Add a small margin between elements */
+    background-color: transparent;
   }
   
   .nav-link:hover {
@@ -44,7 +56,12 @@ body {
     background-size: cover; 
     background-repeat: no-repeat; 
     height: 100vh;
+
     background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('backgrounds/homeBG.png');
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url('backgrounds/homeBG.png');
+    /* Replace 'backgrounds/homeBG.png' with the actual path to your background image */
+
 }
 .home-title {
     font-family: 'Times New Roman', Times, serif;
@@ -122,6 +139,7 @@ footer {
 
 .services-container .services-box {
     max-width: 60%; /* Adjust the maximum width of the boxes */
+    max-height: 500px;
     margin: 10px; /* Adjust margin for spacing around the boxes */
     padding: 0.2rem 2rem 0.1rem;
     /* padding: 0.2rem 2rem 0.1rem; */
@@ -286,6 +304,7 @@ h2 {
     color: #666; /* Slightly lighter color for the content for a softer look */
     line-height: 1.6; /* Improves readability of the post content */
 }
+
 #map-title {
     text-align: center; /* Centers the text horizontally */
     width: 100%; /* Ensures the heading takes full width to properly center the text */
@@ -306,4 +325,69 @@ h2 {
 }
 button {
     margin-right: 5px;
+
+#buttons {
+    position: fixed;
+    left: 2px;
+    top: 51%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 1%;
+  }
+  
+  #buttons button {
+    width: 400px;
+    height: 75px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  #buttons button:hover {
+    /* background: linear-gradient(to bottom, #d9a7c7, #fffcdc); */
+    background-color: #b4a8a8;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+  
+  #map {
+    position: fixed;
+    position: absolute;
+    margin-top: 2%;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 45%;
+    height: 450px;
+    border-radius: 20px;
+    margin-right: 6%;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+label, select, button {
+    display: block;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+
 }
