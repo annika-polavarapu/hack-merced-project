@@ -4,61 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mood Tracker</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Mood Tracker</h1>
     <form id="moodForm">
-        <label for="mood">How are you feeling today?</label>
-        <select id="mood" name="mood">
+        <label for="feeling">How are you feeling today?</label><br>
+        <select id="feeling" name="feeling">
+            <option value="very happy">Very Happy</option>
             <option value="happy">Happy</option>
             <option value="okay">Okay</option>
             <option value="sad">Sad</option>
+            <option value="very sad">Very Sad</option>
             <option value="anxious">Anxious</option>
             <option value="angry">Angry</option>
-        </select>
+            <option value="content">Content</option>
+            <option value="frustrated">Frustrated</option>
+            <option value="peaceful">Peaceful</option>
+            <option value="motivated">Motivated</option>
+            <option value="stressed">Stressed</option>
+        </select><br><br>
 
-        <label for="reason">What's the main reason for your mood today?</label>
-        <input type="text" id="reason" name="reason">
+        <label for="reason">What is the main reason for your mood today?</label><br>
+        <input type="text" id="reason" name="reason"><br><br>
 
-        <label for="enjoyable">Have you done anything enjoyable today?</label>
-        <select id="enjoyable" name="enjoyable">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-        </select>
+        <label for="enjoyable">Have you done anything enjoyable today? If yes, what was it?</label><br>
+        <input type="text" id="enjoyable" name="enjoyable"><br><br>
 
-        <!-- New Questions -->
-        <label for="energy">How would you rate your energy level today?</label>
-        <input type="range" id="energy" name="energy" min="1" max="10">
+        <label for="energy">How would you rate your energy level today? (Out of 10)</label><br>
+        <input type="number" id="energy" name="energy" min="1" max="10"><br><br>
 
-        <label>Did you sleep well last night?</label>
-        <div>
-            <input type="radio" id="sleepYes" name="sleep" value="yes"><label for="sleepYes">Yes</label>
-            <input type="radio" id="sleepNo" name="sleep" value="no"><label for="sleepNo">No</label>
-        </div>
+        <label for="sleep">How did you sleep last night?</label><br>
+        <select id="sleep" name="sleep">
+            <option value="Very well">Very well</option>
+            <option value="Well">Well</option>
+            <option value="Average">Average</option>
+            <option value="Poor">Poor</option>
+            <option value="Very poor">Very poor</option>
+        </select><br><br>
 
-        <label for="activities">What activities did you do today? (Select all that apply)</label>
-        <div>
-            <input type="checkbox" id="activityWork" name="activities" value="Work"><label for="activityWork">Work</label>
-            <input type="checkbox" id="activityExercise" name="activities" value="Exercise"><label for="activityExercise">Exercise</label>
-            <input type="checkbox" id="activityHobby" name="activities" value="Hobby"><label for="activityHobby">Hobby</label>
-        </div>
+        <label for="activities">What activities did you do today? (Select up to 5)</label><br>
+        <input type="checkbox" id="activity1" name="activities" value="Work">
+        <label for="activity1">Work</label><br>
+        <input type="checkbox" id="activity2" name="activities" value="Exercise">
+        <label for="activity2">Exercise</label><br>
+        <input type="checkbox" id="activity3" name="activities" value="Socializing">
+        <label for="activity3">Socializing</label><br>
+        <input type="checkbox" id="activity4" name="activities" value="Hobby">
+        <label for="activity4">Hobby</label><br>
+        <input type="checkbox" id="activity5" name="activities" value="Relaxation">
+        <label for="activity5">Relaxation</label><br><br>
+        
 
-        <label for="meals">How many meals did you have today?</label>
-        <input type="number" id="meals" name="meals" min="0" max="10">
+        <label for="meals">How many meals did you have today?</label><br>
+        <input type="number" id="meals" name="meals" min="0"><br><br>
 
-        <label for="friendContact">When was the last time you contacted a friend?</label>
-        <input type="date" id="friendContact" name="friendContact">
+        <label for="contact">When did you last contact a friend?</label><br>
+        <input type="datetime-local" id="contact" name="contact"><br><br>
 
         <button type="submit">Submit</button>
     </form>
 
-    <h2>Your Mood History</h2>
-    <ul id="moodHistory"></ul>
+    <h2>Mood Log</h2>
+    
+    <div id="log"></div>
 
-    <script src="script.js"></script>
+    <script src="mood.js"></script>
 </body>
 </html>
+
+
+
+
 
 
 

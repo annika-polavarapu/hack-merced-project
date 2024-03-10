@@ -101,20 +101,16 @@ body {
     color: #fff;
     text-align: center;
     padding: 10px;
- }
- 
- 
- 
- 
- 
- 
- .services{
+}
+
+
+
+.services{
     background-color: #fff2d4;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover; 
+    background-repeat: no-repeat; 
     height: 100vh;
- 
- 
+
     min-height: 90px;
     padding-bottom: 7rem;
  }
@@ -141,25 +137,24 @@ body {
     grid-template-columns: repeat(4, 1fr); /* Changed to 2x2 */
     grid-gap: 10px 10px; /* Adjust the gap between rows (vertical) and columns (horizontal) as needed */
     justify-items: center; /* Centers the boxes in their grid cells */
- }
- 
- 
- .services-container .services-box {
+}
+
+.services-container .services-box {
     max-width: 60%; /* Adjust the maximum width of the boxes */
     max-height: 500px;
     margin: 10px; /* Adjust margin for spacing around the boxes */
-    padding: 0.2rem 2rem 0.1rem;
+    /* padding: 0.2rem 2rem 0.1rem; */
+    padding: 2rem; /* Adjust padding for spacing between image and text */
     border-radius: 8rem 8rem 1rem 1rem; /* Rounded corners: top-left, top-right, bottom-right, bottom-left */
-    box-shadow: 0 .1rem .5rem #668498; /* Adjusted shadow color for visibility */
+    box-shadow: 0 .1rem .5rem #51708d; /* Adjusted shadow color for visibility */
     text-align: center;
     cursor: pointer;
     transition: transform .3s ease, box-shadow .3s ease; /* Smooth transition */
     text-decoration: none;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
- }
- 
- 
- .services-container .services-box:nth-child(1) {
+}
+
+.services-container .services-box:nth-child(1) {
     background: url('backgrounds/services1.png') center/cover no-repeat; /* Replace 'image1.jpg' with the actual path to your first image */
  }
  
@@ -188,22 +183,19 @@ body {
  .services-box i {
     font-size: 7rem;
     color: #484848;
- }
- 
- 
- .services-box h3 {
+}
+
+.services-box h3 {
     font-size: 2.6rem;
     transition: .5s ease;
- }
- 
- 
- .services-box p{
+}
+
+.services-box p{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
- }
- 
- 
- .services-box:hover h3 {
+} 
+
+.services-box:hover h3 {
     color: #fff2d4;
  }
  
@@ -216,7 +208,7 @@ body {
  h2 {
     font-size: 40px; /* Change this value to the desired font size */
     text-align: center; /* This centers the text, removing the need for the <center> tag */
- }.contact {
+}.contact {
     background-color: lavenderblush;
     background-size: cover;
     background-repeat: no-repeat;
