@@ -320,11 +320,7 @@ h2 {
     /* Removed justify-items: center; as it's not applicable */
     overflow: hidden; /* To ensure the rounded corners apply to the iframe as well */
 }
-#buttons {
-    margin-bottom: 10px;
-}
-button {
-    margin-right: 5px;
+
 
 #buttons {
     position: fixed;
