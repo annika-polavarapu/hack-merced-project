@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include your head content here -->
+</head>
+<body>
+    <h2>Mental Health Survey</h2>
+    <form id="surveyForm">
+        <label for="mood">How are you feeling today?</label>
+        <select id="mood" name="mood">
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="stressed">Stressed</option>
+            <option value="depressed">Depressed</option>
+            <option value="angry">Angry</option>
+            <!-- Add more mood options as needed -->
+        </select>
+
+        <label for="stressLevel">On a scale of 1 to 10, how intense is your feeling?</label>
+        <input type="number" id="stressLevel" name="stressLevel" min="1" max="10" required>
+
+        <!-- Section for stress levels 1-3 -->
+        <div id="section1" style="display: none;">
+            <label for="question1">How would you describe your day?</label>
+            <textarea id="question1" name="question1"></textarea>
+        </div>
+
+        <!-- Section for stress levels 4-7 -->
+        <div id="section2" style="display: none;">
+            <label for="question2">What factors do you think contribute to your current mood?</label>
+            <textarea id="question2" name="question2"></textarea>
+            <label for="question3">How do you usually cope with stress?</label>
+            <textarea id="question3" name="question3"></textarea>
+        </div>
+
+        <!-- Section for stress levels 8-10 -->
+        <div id="section3" style="display: none;">
+            <label for="question4">Have you experienced any specific events or triggers recently?</label>
+            <textarea id="question4" name="question4"></textarea>
+            <label for="question5">Do you have a support system in place? If so, who can you talk to?</label>
+            <textarea id="question5" name="question5"></textarea>
+        </div>
+
+        <!-- Proceed to Exercises button -->
+        <button type="button" id="proceedButton" onclick="redirectToExercises()" style="display: none;">Proceed to Exercises</button>
+    </form>
+ 
+        <script>
+            document.getElementById("surveyForm").addEventListener("input", function () {
+                const mood = document.getElementById("mood").value;
+                const stressLevel = parseInt(document.getElementById("stressLevel").value);
+    
+                // Determine the appropriate section to show/hide
+                const section1 = document.getElementById("section1");
+                const section2 = document.getElementById("section2");
+                const section3 = document.getElementById("section3");
+    
+                if (stressLevel >= 1 && stressLevel <= 3) {
+                    section1.style.display = 'block';
+                    section2.style.display = 'none';
+                    section3.style.display = 'none';
+                } else if (stressLevel >= 4 && stressLevel <= 7) {
+                    section1.style.display = 'none';
+                    section2.style.display = 'block';
+                    section3.style.display = 'none';
+                } else if (stressLevel >= 8 && stressLevel <= 10) {
+                    section1.style.display = 'none';
+                    section2.style.display = 'none';
+                    section3.style.display = 'block';
+                }
+    
+                // Display the "Proceed to Exercises" button
+                document.getElementById("proceedButton").style.display = 'block';
+    
+                // Display exercises based on mood
+                displayExercises(mood);
+            });
+    
+            // Function to handle redirection
+            function redirectToExercises() {
+                const mood = document.getElementById("mood").value;
+                const stressLevel = parseInt(document.getElementById("stressLevel").value);
+    
+                // You can perform additional logic or send the data to a server here
+    
+                // Redirect to the exercises page with mood and stressLevel as parameters
+                window.location.href = `exercises.html?mood=${mood}&stressLevel=${stressLevel}`;
+            }
+    
+            // Function to display exercises based on mood
+            function displayExercises(mood) {
+                const exerciseList = document.getElementById("exerciseList");
+                exerciseList.innerHTML = ""; // Clear existing exercises
+    
+                // Define exercises based on mood
+                const exercises = {
+                    happy: ["Physical Exercise", "Creative Expression", "Connect with Others"],
+                    sad: ["Mindfulness Meditation", "Gratitude Journal", "Positive Affirmations"],
+                    stressed: ["Deep Breathing", "Limit Screen Time", "Set Realistic Goals"],
+                    depressed: ["Mindfulness Meditation", "Physical Exercise", "Connect with Others"],
+                    angry: ["Deep Breathing", "Creative Expression", "Practice Self-Compassion"]
+                    // Add more exercises as needed
+                };
+    
+                // Create list items for each exercise
+                exercises[mood].forEach(exercise => {
+                    const li = document.createElement("li");
+                    li.innerHTML = `<h2>${exercise}</h2>`;
+                    // Add additional details like images and descriptions if needed
+                    exerciseList.appendChild(li);
+                });
+            }
+        </script>
+    </body>
+    </html>
+    
