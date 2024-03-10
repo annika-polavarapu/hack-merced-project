@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <title>Blog Page</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      #google_translate_element {
+        float: right;
+        margin-right: 10px;
+      }
+    </style>
 </head>
 <body>
 
+  <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
 <!-- Blog Posts Section -->
 <div id="blog-posts" class="blog-posts">
 </div>
