@@ -1,5 +1,5 @@
 body {
-    background: #a3a3a3;
+    background: transparent;
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,12 +15,13 @@ body {
     width: 100%;
     height: 50px; /* Adjust height as needed */
     background-color: transparent;
+    z-index: 1000;
   }
   
   .nav-link {
     font-family: Arial, sans-serif;
     text-decoration: none;
-    color: #ffffff; /* Default text color */
+    color: #fff2d4; /* Default text color */
     padding: 10px; /* Adjust padding to make elements closer together */
     border-radius: 30px;
     transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
@@ -31,7 +32,7 @@ body {
   
   .nav-link:hover {
     background-color: #ccc; /* Background color on hover */
-    color: #fff; /* Change text color on hover */
+    color: #fff2d4; /* Change text color on hover */
   }
   
   /* Styling for all links */
@@ -42,18 +43,39 @@ body {
   
 
 .home {
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  height: 100vh;
-  background-image: url('backgrounds/Home.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    background-image: url('backgrounds/homeBG.png');
+}
+.home-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 85px;
+    text-decoration: none;
+    color: #fff2d4; /* text color */
+    position: relative;
+    left: 90px; /* Adjust the value as needed */
+    top: 30px; /* Adjust the value as needed */
+    line-height: 0.2em;
+    z-index: 1;
+}
+.home-slogan {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #51708d; /* text color */
+    position: relative;
+    left: 100px; /* Adjust the value as needed */
+    top: 30px; /* Adjust the value as needed */
+    line-height: 0.2em;
 }
 
-
 .about {
-    background-color: rosybrown;
-  background-size: cover; 
-  background-repeat: no-repeat; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
     height: 100vh;
+    background-image: url('backgrounds/About Us.png');
 }
 
 section {
@@ -73,38 +95,68 @@ footer {
 
 
 .services{
+    background-color: #fff2d4;
     background-size: cover; 
     background-repeat: no-repeat; 
     height: 100vh;
-    background-image: url('backgrounds/Services.png');
+
+    min-height: 90px;
+    padding-bottom: 7rem;
+}
+.services-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    text-decoration: none;
+    color: #51708d; /* text color */
+    position: relative;
+    line-height: 0.2em;
+    z-index: 1;
+
+    /* Center the text using Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .services-container {
-   padding-top: 150px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Changed to four columns */
-    grid-gap: 20px; /* Adjust the gap between boxes as needed */
+    grid-template-columns: repeat(4, 1fr); /* Changed to 2x2 */
+    grid-gap: 10px 10px; /* Adjust the gap between rows (vertical) and columns (horizontal) as needed */
     justify-items: center; /* Centers the boxes in their grid cells */
 }
 
 .services-container .services-box {
-    max-width: 100%; /* Adjust the maximum width of the boxes */
+    max-width: 60%; /* Adjust the maximum width of the boxes */
     margin: 10px; /* Adjust margin for spacing around the boxes */
-    background: #f5ebeb;
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    box-shadow: 0 .1rem .5rem #ccc; /* Adjusted shadow color for visibility */
+    padding: 0.2rem 2rem 0.1rem;
+    border-radius: 8rem 8rem 1rem 1rem; /* Rounded corners: top-left, top-right, bottom-right, bottom-left */
+    box-shadow: 0 .1rem .5rem #668498; /* Adjusted shadow color for visibility */
     text-align: center;
-    border-top: .6rem solid #be6f81;
-    border-bottom: .6rem solid #48a5df;
     cursor: pointer;
     transition: transform .3s ease, box-shadow .3s ease; /* Smooth transition */
     text-decoration: none;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+.services-container .services-box:nth-child(1) {
+    background: url('backgrounds/services1.png') center/cover no-repeat; /* Replace 'image1.jpg' with the actual path to your first image */
+}
+
+.services-container .services-box:nth-child(2) {
+    background: url('backgrounds/services2.png') center/cover no-repeat; /* Replace 'image2.jpg' with the actual path to your second image */
+}
+
+.services-container .services-box:nth-child(3) {
+    background: url('backgrounds/services3.png') center/cover no-repeat; /* Replace 'image3.jpg' with the actual path to your third image */
+}
+
+.services-container .services-box:nth-child(4) {
+    background: url('backgrounds/services4.png') center/cover no-repeat; /* Replace 'image4.jpg' with the actual path to your fourth image */
+}
+
 .services-box:hover {
-    box-shadow: 0 .1rem 2rem #48a5df;
+    box-shadow: 0 .1rem 2rem #668498;
     transform: scale(1.02);
 }
 
@@ -123,13 +175,8 @@ footer {
     margin: 1rem 0 3rem;
 } 
 
-.services {
-    min-height: 90px;
-    padding-bottom: 7rem;
-}
-
 .services-box:hover h3 {
-    color: #d785c3;
+    color: #fff2d4;
 } 
 
 a {
@@ -263,32 +310,5 @@ h2 {
 
 button {
     margin-right: 5px;
-}
-
-.blog-posts {
-    width: 80%;
-    margin: 20px auto; /* Centers the blog post section and adds some spacing from the top and bottom */
-    background-color: #f5ebeb; /* Light background color similar to the form section for consistency */
-    padding: 20px;
-    border-radius: 5px; /* Adds rounded corners for a softer look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.post {
-    background-color: #ffffff; /* Slightly contrasting background to distinguish individual posts */
-    border: 1px solid #ddd; /* Subtle border */
-    margin-bottom: 20px; /* Spacing between posts */
-    padding: 20px; /* Padding inside each post */
-    border-radius: 5px; /* Consistency in design with rounded corners */
-}
-
-.post h2 {
-    color: #333; /* Dark color for the title for readability */
-    margin-bottom: 10px; /* Adds space between the title and content/date */
-}
-
-.post p {
-    color: #666; /* Slightly lighter color for the content for a softer look */
-    line-height: 1.6; /* Improves readability of the post content */
 }
 
