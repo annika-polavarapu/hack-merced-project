@@ -1,15 +1,17 @@
-body {
-    background: #FFFFFF;
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
 
- .help {
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0; 
+    padding: 0; 
+}
+
+
+.help {
     background: linear-gradient(to bottom, #775D52, #ffffff);
  }
- 
+
  #navbar {
     display: flex;
     justify-content: center; /* Center items horizontally */
@@ -29,9 +31,10 @@ body {
   
   .nav-link {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    font-size:large;
     text-decoration: none;
-    color: #fff2d4; /* Default text color */
-    padding: 11px; /* Adjust padding to make elements closer together */
+    color: #ffffff; /* Default text color */
+    padding: 10px; /* Adjust padding to make elements closer together */
     border-radius: 20px;
     transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
     min-width: 80px; /* Set a minimum width */
@@ -41,13 +44,13 @@ body {
   }
   
   .nav-link:hover {
-    background-color: #ccc; /* Background color on hover */
-    color: #fff2d4; /* Change text color on hover */
+    background-color: #ffffff; /* Background color on hover */
+    color: #51708d; /* Change text color on hover */
   }
   
   /* Styling for all links */
   .nav-link {
-    background-color: #333; /* Set background color for all links */
+    background-color: rgba(255, 255, 255, 0.5);; /* Set background color for all links */
   }
   
   
@@ -55,20 +58,23 @@ body {
     background-size: cover; 
     background-repeat: no-repeat; 
     height: 100vh;
-
     background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('backgrounds/homeBG.png');
+
  }
+
+ .home-title {
 
     font-family: 'Times New Roman', Times, serif;
     font-size: 85px;
     text-decoration: none;
     color: #fff2d4; /* text color */
     position: relative;
-    left: 90px; /* Adjust the value as needed */
-    top: 50px; /* Adjust the value as needed */
+    left: 90px; 
+    top: 50px; 
     line-height: 0.2em;
     z-index: 1;
-  
+
+
 }
 .home-slogan {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
@@ -77,8 +83,8 @@ body {
     text-decoration: none;
     color: #51708d; /* text color */
     position: relative;
-    left: 110px; /* Adjust the value as needed */
-    top: 30px; /* Adjust the value as needed */
+    left: 110px; 
+    top: 30px;
     line-height: 0.2em;
 }
 .about {
@@ -93,19 +99,18 @@ body {
     text-decoration: none;
     color: #fff2d4; /* text color */
     position: relative;
-    left: 750px; /* Adjust the value as needed */
-    top: 90px; /* Adjust the value as needed */
+    left: 650px; 
+    top: 90px; 
     line-height: 0.2em;
     z-index: 1;
 }
-
 .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     left: 50%;
-    top: 67%;
+    top: 1800px;
     transform: translateX(-50%);
     background-color: rgba(255, 242, 212, 0.6); /* White with 80% opacity */
     padding: 20px; /* Adjust padding as needed */
@@ -122,7 +127,6 @@ body {
     line-height: 1.2em; /* Adjust line height as needed */
     text-align: center; /* Center text within the rectangle */
 }
-
 section {
     padding: 20px;
 }
@@ -135,15 +139,12 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
-
 .services{
     background-color: #fff2d4;
     background-size: cover; 
     background-repeat: no-repeat; 
     height: 100vh;
     background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url('backgrounds/servicesBG.png');
-
     min-height: 90px;
     padding-bottom: 7rem;
 }
@@ -155,7 +156,6 @@ footer {
     position: relative;
     line-height: 0.2em;
     z-index: 1;
-    /* Center the text using Flexbox */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,22 +163,20 @@ footer {
 }
 .services-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Changed to 2x2 */
-    grid-gap: 10px 10px; /* Adjust the gap between rows (vertical) and columns (horizontal) as needed */
-    justify-items: center; /* Centers the boxes in their grid cells */
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 10px 10px;
+    justify-items: center;
     vertical-align: bottom;
 }
-
 .services-container .services-box {
-    max-width: 60%; /* Adjust the maximum width of the boxes */
+    max-width: 60%;
     max-height: 500px;
-    margin: 10px; /* Adjust margin for spacing around the boxes */
+    margin: 10px;
     padding: 0.2rem 2rem 0.1rem;
-    /* padding: 0.2rem 2rem 0.1rem; */
-    padding: 2rem; /* Adjust padding for spacing between image and text */
-    border-radius: 8rem 8rem 1rem 1rem; /* Rounded corners: top-left, top-right, bottom-right, bottom-left */
-    box-shadow: 0 .1rem .5rem #668498; /* Adjusted shadow color for visibility */
-    box-shadow: 0 .1rem .5rem #51708d; /* Adjusted shadow color for visibility */
+    padding: 2rem; 
+    border-radius: 8rem 8rem 1rem 1rem; 
+    box-shadow: 0 .1rem .5rem #668498; 
+    box-shadow: 0 .1rem .5rem #51708d; 
     text-align: center;
     cursor: pointer;
     transition: transform .3s ease, box-shadow .3s ease; /* Smooth transition */
@@ -190,62 +188,56 @@ footer {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-position: center top; /* Adjust the background position */
+    background-position: center top;
 }
 .services-container .services-box img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
 }
-
 .services-container .services-box:nth-child(1) {
-    background: url('backgrounds/services1.png') center/cover no-repeat; /* Replace 'image1.jpg' with the actual path to your first image */
+    background: url('backgrounds/services1.png') center/cover no-repeat;
 }
 .services-container .services-box:nth-child(2) {
-    background: url('backgrounds/services2.png') center/cover no-repeat; /* Replace 'image2.jpg' with the actual path to your second image */
+    background: url('backgrounds/services2.png') center/cover no-repeat;
 }
 .services-container .services-box:nth-child(3) {
-    background: url('backgrounds/services3.png') center/cover no-repeat; /* Replace 'image3.jpg' with the actual path to your third image */
+    background: url('backgrounds/services3.png') center/cover no-repeat;
 }
 .services-container .services-box:nth-child(4) {
-    background: url('backgrounds/services4.png') center/cover no-repeat; /* Replace 'image4.jpg' with the actual path to your fourth image */
+    background: url('backgrounds/services4.png') center/cover no-repeat;
 }
 .services-box:hover {
     box-shadow: 0 .1rem 2rem #668498;
     transform: scale(1.02);
 }
-
 .services-box i {
     font-size: 7rem;
     color: #484848;
     color: #51708d;
 }
-
 .services-box h3 {
     font-size: 2.6rem;
     transition: .5s ease;
     color: #51708d;
-    margin-top: 17rem; /* Adjust spacing between image and heading */
+    margin-top: 17rem;
 }
-
 .services-box p{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
-    text-align: center; /* Center text below the heading */
+    text-align: center; 
     vertical-align: bottom;
 } 
-
 .services-box:hover h3 {
-    color: #010101;
+    color: #fff2d4;
 } 
 a {
-    text-decoration: none; /* This removes the underline from all links */
+    text-decoration: none; 
 }
 h2 {
-    font-size: 40px; /* Change this value to the desired font size */
-    text-align: center; /* This centers the text, removing the need for the <center> tag */
+    font-size: 40px;
+    text-align: center;
 }
-
 .contact {
     background-color: lavenderblush;
     background-size: cover; 
@@ -337,9 +329,8 @@ h2 {
 
  }
 
- #map-title {
 
-
+#map-title {
     text-align: center; /* Centers the text horizontally */
     width: 100%; /* Ensures the heading takes full width to properly center the text */
     margin-top: 20px; /* Adds some space at the top. Adjust this value as needed. */
@@ -367,7 +358,7 @@ h2 {
     margin-right: 5px;
  }
 
-#buttons {
+ #buttons {
     position: fixed;
     left: 2px;
     top: 51%;
@@ -396,7 +387,6 @@ h2 {
     background-color: #b4a8a8;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
   
   #map {
     position: fixed;
@@ -413,31 +403,23 @@ h2 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   }
 
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-
   body {
     font-family: Arial, sans-serif;
+    margin: 20px;
     overflow-x: hidden; 
     overflow-y: auto; 
     margin: 0; 
     padding: 0; 
-
 }
 
 label, select, button {
     display: block;
     margin: 10px 0;
 }
-
 ul {
     list-style-type: none;
     padding: 0;
 }
-
 li {
     margin: 5px 0;
-
 }
