@@ -6,8 +6,6 @@ body {
     box-sizing: border-box;
  }
 
-#navbar {
- }
  .help {
     background: linear-gradient(to bottom, #775D52, #ffffff);
  }
@@ -32,6 +30,7 @@ body {
   
   .nav-link {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    font-size:large;
     text-decoration: none;
     color: #fff2d4; /* Default text color */
     padding: 11px; /* Adjust padding to make elements closer together */
@@ -44,13 +43,13 @@ body {
   }
   
   .nav-link:hover {
-    background-color: #ccc; /* Background color on hover */
-    color: #fff2d4; /* Change text color on hover */
+    background-color: #ffffff; /* Background color on hover */
+    color: #51708d; /* Change text color on hover */
   }
   
   /* Styling for all links */
   .nav-link {
-    background-color: #333; /* Set background color for all links */
+    background-color: rgba(255, 255, 255, 0.5);; /* Set background color for all links */
   }
   
   
@@ -112,7 +111,7 @@ body {
     align-items: center;
     position: absolute;
     left: 50%;
-    top: 67%;
+    top: 2150px;
     transform: translateX(-50%);
     background-color: rgba(255, 242, 212, 0.6); /* White with 80% opacity */
     padding: 20px; /* Adjust padding as needed */
@@ -290,6 +289,8 @@ h2 {
     margin-left: auto;
     margin-right: auto;
 }
+
+
 .feedback-form input[type="text"],
 .feedback-form input[type="email"],
 .feedback-form textarea {
@@ -343,9 +344,6 @@ h2 {
     line-height: 1.6; /* Improves readability of the post content */
 
  }
- #map-title {
-
-}
 
 #map-title {
     text-align: center; /* Centers the text horizontally */
